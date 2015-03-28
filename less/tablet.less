@@ -1,0 +1,53 @@
+/*
+Nombre del sitio:	ABC Facturación
+Autor:				Marco A. Hernández Pérez
+*/
+
+/* Tablet portrait
+================================================== */
+.tablet () {
+/*********************
+ESTILOS GENERALES
+*********************/
+body {
+	background: @gris-20 url('../images/fondo-abc-01.jpg') center fixed no-repeat;
+	background-size: auto 100%;
+}
+
+h1 {
+	background: transparent;
+	font-size: 2.3rem; 
+	.text-glow;
+}
+
+/*********************
+HEADER
+*********************/
+header {
+	background: fade(@blanco,70%);
+}
+/*********************
+CONTENIDO
+*********************/
+/******* Formulario ******/
+#formulario {
+	background: fade(@blanco, 80%);
+}
+
+/******* Botones ******/
+.botones-validacion {
+	clear: both;
+	overflow: auto;
+
+	br {
+		display: none;
+	}
+}
+
+/*********************
+FOOTER
+*********************/
+footer {	
+}
+
+}

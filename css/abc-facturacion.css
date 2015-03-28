@@ -1,0 +1,705 @@
+/******************************************************************
+Nombre del sitio: In Serie 4.0
+Autor: Marco Antonio Hern�ndez P�rez
+
+Importa todos los archivos en uno solo 
+******************************************************************/
+/*
+Nombre del sitio:	ABC Facturaci�n
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/*********************
+IMPORTS
+*********************/
+/*
+Nonmbe del sitio:	ABC facturación
+Autor:				Marco Antonio Hernández Pérez
+*/
+/*********************
+COLORES
+*********************/
+/*********************
+DEGRADADOS
+(Claro a obscuro)
+*********************/
+/********** Sencillos ***********/
+/*Degradado básico de 2 colores*/
+/*Vertical*/
+/*Horizontal*/
+/*Diagonal superior*/
+/*Diagonal inferior*/
+/*Radial*/
+/********** Efectos ***********/
+/* Metal*/
+/* No funciona en IE <8*/
+/* Stripes No funciona en IE <9*/
+/*********************
+TIPOGRAFÍA
+*********************/
+/********** Tipos de letra ***********/
+@font-face {
+  
+}
+/*Bases*/
+.normal {
+  font-family: Arial, Verdana, "Helvetica Neue", Helvetica, sans-serif;
+}
+.open {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
+.open-semi {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 600;
+}
+.open-bold {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+}
+/*text decoration*/
+.tnone {
+  text-decoration: none;
+}
+.tunder {
+  text-decoration: underline;
+}
+/* Alinear */
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+/********** Efectos ***********/
+/*Normal*/
+/*Inset*/
+/*Emboss*/
+/*Brillo*/
+/*blur*/
+/*3D*/
+/*Silueta*/
+/*Drop Cap
+	Se debe definir manualmente el elemento que llevará el efecto. Esta es una muestra con <article> <p>
+*/
+/*********************
+BORDER RADIUS
+*********************/
+/*********************
+TRANSFORM
+*********************/
+/********** Bases ***********/
+/********** 2D ***********/
+/********** 3D ***********/
+/*********************
+BOX SIZING
+*********************/
+/* .boxSizing(border-box); */
+/*********************
+BOX SHADOW
+*********************/
+/********** Fuera ***********/
+/*Sombra estándar*/
+/*Sombra gruesa*/
+/*Brillo*/
+/*Dentro*/
+/*Sombra fuera y dentro*/
+/*Sombras arqueada*/
+.shadow-arc {
+  position: relative;
+}
+.shadow-arc:before,
+.shadow-arc:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 80%;
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 15px 10px 0px #cccccc;
+  -moz-box-shadow: 0 15px 10px 0px #cccccc;
+  -ms-box-shadow: 0 15px 10px 0px #cccccc;
+  -o-box-shadow: 0 15px 10px 0px #cccccc;
+  box-shadow: 0 15px 10px 0px #cccccc;
+  behavior: url(PIE.htc);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow-arc:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+.shadow-arc-left {
+  position: relative;
+}
+.shadow-arc-left:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 80%;
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 15px 10px 0px #cccccc;
+  -moz-box-shadow: 0 15px 10px 0px #cccccc;
+  -ms-box-shadow: 0 15px 10px 0px #cccccc;
+  -o-box-shadow: 0 15px 10px 0px #cccccc;
+  box-shadow: 0 15px 10px 0px #cccccc;
+  behavior: url(PIE.htc);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.shadow-arc-right {
+  position: relative;
+}
+.shadow-arc-right:after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 80%;
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 15px 10px 0px #cccccc;
+  -moz-box-shadow: 0 15px 10px 0px #cccccc;
+  -ms-box-shadow: 0 15px 10px 0px #cccccc;
+  -o-box-shadow: 0 15px 10px 0px #cccccc;
+  box-shadow: 0 15px 10px 0px #cccccc;
+  behavior: url(PIE.htc);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+/*Sombra tipo monumento*/
+.shadow-monument {
+  position: relative;
+}
+.shadow-monument:before {
+  content: "";
+  position: relative\9;
+  position: absolute;
+  z-index: -1;
+  top: 84%;
+  right: 0px;
+  bottom: 0;
+  left: 0px;
+  background: #cccccc;
+  -webkit-box-shadow: 0 0 8px 1px #cccccc;
+  -moz-box-shadow: 0 0 8px 1px #cccccc;
+  -ms-box-shadow: 0 0 8px 1px #cccccc;
+  -o-box-shadow: 0 0 8px 1px #cccccc;
+  box-shadow: 0 0 8px 1px #cccccc;
+  behavior: url(PIE.htc);
+  -webkit-transform: translate(-42px, 0) skew(72deg, 0);
+  -moz-transform: translate(-42px, 0) skew(72deg, 0);
+  -ms-transform: translate(-42px, 0) skew(72deg, 0);
+  -o-transform: translate(-42px, 0) skew(72deg, 0);
+  transform: translate(-42px, 0) skew(72deg, 0);
+}
+/*Sombra hacia los lados*/
+/*********************
+ANIMACIONES
+*********************/
+/*********************
+FORMULARIOS
+*********************/
+/*********************
+USABILIDAD
+*********************/
+/*********************
+DESARROLLO
+*********************/
+/* SEO Helper */
+/* Normalize */
+/* Reset */
+/*********************
+ESTILOS GENERALES
+*********************/
+body {
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  background: #ebebeb;
+}
+img {
+  max-width: 100%;
+}
+/******* Tipograf�a ******/
+h1 {
+  margin-top: 0;
+  padding: 20px 20px;
+  background: url('../images/fondo-abc-1-movil.jpg') center center no-repeat;
+  background-size: 100%;
+  color: #307ac3;
+  font-size: 1.9rem;
+  text-align: center;
+}
+h2 {
+  margin: -11px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #c1194c;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  -webkit-border-top-right-radius: 6px;
+  -webkit-border-top-left-radius: 6px;
+  -moz-border-radius-topright: 6px;
+  -moz-border-radius-topleft: 6px;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+h2 strong {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: #215486;
+}
+h4 {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 700;
+  color: #379dd7;
+  font-size: 1.9rem;
+}
+/******* Links ******/
+a,
+a:visited {
+  /* on hover */
+
+  /* on click */
+
+  /* mobile tap color */
+
+}
+/******* Listas ******/
+ul li a,
+ul li a:visited {
+  /* on hover */
+
+  /* on click */
+
+  /* mobile tap color */
+
+}
+/******* Tablas ******/
+table {
+  width: 100%;
+}
+table tr td {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  background: #ffffff;
+  font-size: 1.3rem;
+  color: #307ac3;
+  text-align: left;
+  border: 1px solid #cbcccb;
+  border-bottom: 0;
+}
+table tr td:first-child {
+  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-weight: 600;
+  color: #262a2b;
+}
+table tr td:last-child {
+  border-top: 0;
+}
+table .celda-gris td {
+  background: #ebebeb;
+}
+table .ultima-celda td:last-child {
+  border-bottom: 1px solid #cbcccb;
+}
+/******* Forms ******/
+form input[type="submit"],
+form input[type="button"] {
+  display: block;
+  margin: auto;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  behavior: url(PIE.htc);
+}
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form textarea,
+form select {
+  display: block;
+  padding: 8px;
+  width: 100%;
+  background: #ffffff;
+  font-size: 1.4rem;
+  border: 1px solid #cbcccb;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  behavior: url(PIE.htc);
+}
+form select {
+  height: 40px;
+  padding: 0;
+}
+form label {
+  display: block;
+  margin-left: -15px;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+form label span {
+  color: #ff0000;
+}
+.clearfix {
+  clear: both;
+}
+/*********************
+HEADER
+*********************/
+header {
+  padding: 10px 0;
+  background: #ffffff;
+}
+/*********** Logo ***********/
+.logo-abc img {
+  width: 60px;
+}
+.logo-facturacion {
+  text-align: right;
+}
+.logo-facturacion img {
+  padding-top: 4px;
+  width: 180px;
+  text-align: right;
+}
+/*********************
+CONTENIDO
+*********************/
+/******* Formulario ******/
+#formulario {
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  behavior: url(PIE.htc);
+}
+.aviso {
+  padding: 20px 0;
+  color: #ff0000;
+  font-style: italic;
+}
+/******* Botones ******/
+.azul {
+  background: #307ac3;
+}
+.cielo {
+  background: #379dd7;
+}
+.magenta {
+  background: #c1194c;
+}
+form input.siguiente {
+  padding-right: 40px;
+  background: #307ac3 url('../images/icono-siguiente.svg') 94% center no-repeat;
+  background-size: 20px 20px;
+}
+form input.regresar {
+  padding-right: 40px;
+  background: #307ac3 url('../images/icono-regresar.svg') 94% center no-repeat;
+  background-size: 20px 20px;
+}
+form input.aceptar {
+  padding-right: 40px;
+  background: #307ac3 url('../images/icono-aceptar.svg') 94% center no-repeat;
+  background-size: 20px 20px;
+  width: 50%;
+}
+form input.editar {
+  padding-right: 40px;
+  background: #c1194c url('../images/icono-editar.svg') 94% center no-repeat;
+  background-size: 20px 20px;
+  width: 50%;
+}
+/******* Video ******/
+.video {
+  position: rel
+	ative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+
+  padding-top: 25px;
+  height: 0;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*********************
+FOOTER
+*********************/
+/*
+Nombre del sitio:	In Serie 4.0
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/* Mobile Landscape
+================================================== */
+/*
+Nombre del sitio:	ABC Facturaci�n
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/* Tablet portrait
+================================================== */
+/*
+Nombre del sitio:	In serie 4.0
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/* Tablet landscape - Desktop
+================================================== */
+/*
+Nombre del sitio:	In serie 4.0
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/* Widescreen
+================================================== */
+/*
+Nombre del sitio:	In Serie 4.0
+Autor:				Marco A. Hern�ndez P�rez
+*/
+/*Mobile landscape*/
+@media only screen and (min-width: 481px) {
+  /*********************
+  HEADER
+  *********************/
+  /*********************
+  CONTENIDO
+  *********************/
+  /*********************
+  FOOTER
+  *********************/
+}
+/*Tablet Portrait*/
+@media only screen and (min-width: 768px) {
+  /*********************
+  ESTILOS GENERALES
+  *********************/
+  body {
+    background: #ebebeb url('../images/fondo-abc-01.jpg') center fixed no-repeat;
+    background-size: auto 100%;
+  }
+  h1 {
+    background: transparent;
+    font-size: 2.3rem;
+    text-shadow: 0 0 5px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff, 0 0 25px #ffffff;
+  }
+  /*********************
+  HEADER
+  *********************/
+  header {
+    background: rgba(255, 255, 255, 0.7);
+  }
+  /*********************
+  CONTENIDO
+  *********************/
+  /******* Formulario ******/
+  #formulario {
+    background: rgba(255, 255, 255, 0.8);
+  }
+  /******* Botones ******/
+  .botones-validacion {
+    clear: both;
+    overflow: auto;
+  }
+  .botones-validacion br {
+    display: none;
+  }
+  /*********************
+  FOOTER
+  *********************/
+}
+/*Tablet landscape - Desktop*/
+@media only screen and (min-width: 960px) {
+  /*********************
+  ESTILOS GENERALES
+  *********************/
+  body {
+    background: #ebebeb url('../images/fondo-abc-01.jpg') center fixed no-repeat;
+    background-size: auto auto;
+  }
+  h1 {
+    background: transparent;
+    font-size: 2.5rem;
+  }
+  h1 strong {
+    font-size: 2.7rem;
+  }
+  h2 {
+    padding: 15px;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -o-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+  }
+  h2::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 0;
+    width: 28px;
+    height: 30px;
+    background: url('../images/curva-izquierda.svg') center center no-repeat;
+  }
+  h2::after {
+    content: '';
+    position: absolute;
+    right: -28px;
+    top: 0;
+    width: 28px;
+    height: 30px;
+    background: url('../images/curva-derecha.svg') center center no-repeat;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  /******* Forms ******/
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 50%;
+  }
+  form input[type="submit"],
+  form input[type="button"] {
+    font-size: 1.25rem;
+  }
+  form label {
+    padding-top: 10px;
+    text-align: right;
+  }
+  form br {
+    line-height: 6rem;
+  }
+  .registro form input[type="text"],
+  .registro form input[type="password"],
+  .registro form input[type="email"],
+  .registro form textarea,
+  .registro form select {
+    width: 58%;
+  }
+  /******* Tablas ******/
+  table tr td {
+    display: table-cell;
+    width: 70%;
+    border-bottom: 1px solid #cbcccb;
+  }
+  table tr td:first-child {
+    width: 30%;
+    font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-weight: 600;
+    color: #262a2b;
+    text-align: right;
+  }
+  /*********************
+  HEADER
+  *********************/
+  header {
+    padding: 15px 0;
+  }
+  /*********** Logo ***********/
+  .logo-abc img {
+    width: 80px;
+  }
+  .logo-facturacion {
+    text-align: right;
+  }
+  .logo-facturacion img {
+    padding-top: 6px;
+    width: 230px;
+  }
+  /*********************
+  CONTENIDO
+  *********************/
+  .delegacion {
+    padding-top: 0;
+  }
+  /******* Botones ******/
+  form input.aceptar,
+  form input.editar {
+    width: 100%;
+    background-size: 30px 30px;
+  }
+  .botones-validacion {
+    margin-top: 20px;
+    text-align: center;
+  }
+  /*********************
+  FOOTER
+  *********************/
+}
+/*Widescreen*/
+@media only screen and (min-width: 1240px) {
+  /*********************
+  HEADER
+  *********************/
+  /*********************
+  CONTENIDO
+  *********************/
+  /*********************
+  FOOTER
+  *********************/
+}
+/*Mobile Retina*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /*********************
+  HEADER
+  *********************/
+  /*********************
+  CONTENIDO
+  *********************/
+  /*********************
+  FOOTER
+  *********************/
+}

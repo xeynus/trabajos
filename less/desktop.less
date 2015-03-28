@@ -1,0 +1,155 @@
+/*
+Nombre del sitio:	In serie 4.0
+Autor:				Marco A. Hernández Pérez
+*/
+
+/* Tablet landscape - Desktop
+================================================== */
+.desktop () {
+/*********************
+ESTILOS GENERALES
+*********************/
+body {
+	background: @gris-20 url('../images/fondo-abc-01.jpg') center fixed no-repeat;
+	background-size: auto auto;
+}
+
+h1 {
+	background: transparent;
+	font-size: 2.5rem;
+
+	strong {
+		font-size: 2.7rem;
+	}
+}
+
+h2 {
+	padding: 15px;
+	font-size: 2rem;
+	line-height: 2.2rem;
+	.border-radius-custom(0, 0, 6px, 6px);
+}
+
+h2::before {
+	content: '';
+	position: absolute;
+	left: -28px;
+	top: 0;
+	width: 28px;
+	height: 30px;
+	background: url('../images/curva-izquierda.svg')center center no-repeat;
+}
+
+h2::after {
+	content: '';
+	position: absolute;
+	right: -28px;
+	top: 0;
+	width: 28px;
+	height: 30px;
+	background: url('../images/curva-derecha.svg')center center no-repeat;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+/******* Forms ******/
+form {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		width: 50%;
+		// font-size: 1.4rem;
+	}
+
+	input[type="submit"],
+	input[type="button"] {
+		font-size: 1.25rem;
+	}
+
+	label {
+		padding-top: 10px;
+		text-align: right;
+	}
+
+	br {
+		line-height: 6rem;
+	}
+}
+
+.registro form {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		width: 58%;
+	}
+}
+
+/******* Tablas ******/
+table {
+
+	tr {
+		td {
+			display: table-cell; 
+			width: 70%;
+			border-bottom: 1px solid @gris-40;
+		}
+
+		td:first-child {
+			width: 30%;
+			.open-semi;
+			color: @texto;
+			text-align: right; 
+		}
+	}
+}
+/*********************
+HEADER
+*********************/
+header {
+	padding: 15px 0;
+}
+
+/*********** Logo ***********/
+.logo-abc {
+    img {
+    	width: 80px;
+    }
+}
+
+.logo-facturacion {
+	text-align: right;
+    img  {
+    	padding-top: 6px;
+		width: 230px;
+    } 
+}
+/*********************
+CONTENIDO
+*********************/
+.delegacion {
+	padding-top: 0;
+}
+
+/******* Botones ******/
+form input.aceptar, form input.editar {
+	width: 100%;
+	background-size: 30px 30px;
+}
+
+.botones-validacion {
+	margin-top: 20px;
+	text-align: center;
+}
+/*********************
+FOOTER
+*********************/
+footer {	
+}
+
+}
