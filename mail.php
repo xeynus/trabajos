@@ -51,7 +51,7 @@ CONTENIDO
 					<p>Su factura se esta generando, por favor espere unos minutos.</p>
 				</div>
 
-				<div id="validacion-facturas" onload="ocultar()">
+				<div id="validacion-facturas" style="display:none";>
 					<img src="proof.jpg" alt="">
 					<?php
 
@@ -170,6 +170,10 @@ CONTENIDO
 					        }
 					?>
 				</div>
+				<script type="text/javascript">
+					$('#validacion-facturas').show();
+					$('#cargando').hide();
+				</script>
 			</section>
 		</div>
 	</div>
