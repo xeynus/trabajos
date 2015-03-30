@@ -15,19 +15,16 @@ session_start();
 
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 
-<script>
-	jQuery(document).ready(function($) {
-	});
-
-		// $('#validacion-facturas').load(function() {
-		// 	 Act on the event 
-		// 	$('.cargando').hide();
-		// });
-
-
-
+<!-- Preloader -->
+<script type="text/javascript">
+	//<![CDATA[
+		$(window).load(function() { // makes sure the whole site is loaded
+			$('#status').fadeOut(); // will first fade out the loading animation
+			$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+			$('body').delay(350).css({'overflow':'visible'});
+		})
+	//]]>
 </script>
-
 </head>
 <body>
 
@@ -48,11 +45,16 @@ CONTENIDO
 <!--********** Formulario **********-->
 			<section id="formulario">
 				<div id="cargando">
-					<p>Su factura se esta generando, por favor espere unos minutos.</p>
+					
 				</div>
 
-				<div id="validacion-facturas" style="display:none";>
-					<img src="proof.jpg" alt="">
+<!-- Preloader -->
+				<div id="preloader">
+					<p>Su factura se esta generando, por favor espere unos minutos.</p>
+					<div id="status">&nbsp;</div>
+				</div>
+
+				<div id="validacion-facturas">
 					<?php
 
 						require_once("conexion.php");
@@ -170,14 +172,13 @@ CONTENIDO
 					        }
 					?>
 				</div>
-				<script type="text/javascript">
-					$('#validacion-facturas').show();
-					$('#cargando').hide();
-				</script>
+
 			</section>
 		</div>
 	</div>
 </div>
+
+
 </body>
 </html>
 
